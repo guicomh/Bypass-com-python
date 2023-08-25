@@ -7,7 +7,7 @@ temp = input("Apagar arquivos do seu computador? (y/n) >")
 if temp == 'y':
 
 # apagando arquivos temporarios
-    os.system("rd /q %temp%")
+    os.system("rd/s/q %temp%")
     os.system("RD/s/q Recent")
 
 # apagando pasta mods fivem
