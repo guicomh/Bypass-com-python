@@ -6,12 +6,12 @@ def apagar_tudo():
 
     os.system("rd/s/q %temp%")
     os.system("RD/s/q Recent")
-    os.system("cd .. && cd .. & cd .. & cd .. &&cd AppData\Local\FiveM\FiveM.app && rd/s/q mods")
-    os.system("cd .. && cd .. & cd .. & cd .. &&cd AppData\Local\FiveM\FiveM.app && rd/s/q logs")  
+    os.system("cd .. && cd .. && cd ..  &&cd AppData\Local\FiveM\FiveM.app && rd/s/q mods")
+    os.system("cd .. && cd .. && cd ..  &&cd AppData\Local\FiveM\FiveM.app && rd/s/q logs")  
 
 def fivem_a():
 
-    os.system("cd .. && cd .. & cd .. & cd .. && cd AppData\Local\FiveM && start fivem")
+    os.system("cd .. && cd .. &&cd ..  &&cd AppData\Local\FiveM && start fivem")
     
 
  
