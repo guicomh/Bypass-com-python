@@ -14,9 +14,6 @@ def fivem_a():
     os.system("cd .. && cd .. &&cd ..  &&cd AppData\Local\FiveM && start fivem")
     
 
- 
-    
-
 janela = Tk()
 
 janela.iconbitmap("icone.ico")
