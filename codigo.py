@@ -1,26 +1,28 @@
-import os 
+import os
+from tkinter import *
+from tkinter import ttk
 
-os.system("Title Bypassgui")
+def apagar_tudo():
 
-temp = input("Apagar arquivos do seu computador? (y/n) >")
-
-if temp == 'y':
-
-# apagando arquivos temporarios
     os.system("rd/s/q %temp%")
     os.system("RD/s/q Recent")
-
-# apagando pasta mods fivem
     os.system("cd AppData\Local\FiveM\FiveM.app")
-    os.system("RD/s/q mods")
+    os.system("rd/s/q mods")     
+    
 
-if temp == 'n':
+janela = Tk()
 
-    print("ok")
-    os.system("pause")   
+janela.title("Bypass do Gui")
+janela.geometry("300x200")
+
+texto = Label(janela, text="Bypass")
+texto.grid(column=0, row=0, padx=130, pady=1)
+
+botao = Button(janela, text="Apagar", command=apagar_tudo)
+botao.grid(column=0, row=1, padx=10, pady=10)
+
+botao_kendra = Button(janela, text='Fechar', command=janela.destroy)
+botao_kendra.grid(column=0, row=2, padx=20, pady=20)
 
 
-os.system("pause")
-
-
-  
+janela.mainloop()
