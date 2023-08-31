@@ -12,25 +12,30 @@ def apagar_tudo():
 def fivem_a():
 
     os.system("cd .. && cd .. &&cd ..  &&cd AppData\Local\FiveM\FiveM.app\data  && rd/s/q cache && rd/s/q nui-storage && rd/s/q server-cache &&  rd/s/q server-cache-priv ")
+
+def abrir_fivem():
+
+    os.system("cd .. && cd .. &&cd ..  &&cd AppData\Local\FiveM && start FiveM.exe") 
+
     
 
 janela = Tk()
 
 janela.iconbitmap("icone.ico")
 
-janela.title("Bypass do Gui")
+janela.title("Limpeza")
 janela.geometry("300x200")
 
-texto = Label(janela, text="Limpar Fivem")
+texto = Label(janela, text="Limpar")
 texto.grid(column=0, row=0, padx=130, pady=1)
 
 botao = Button(janela, text="Apagar", command=apagar_tudo)
 botao.grid(column=0, row=1, padx=10, pady=10)
 
-botao_limpeza = Button(janela, text='Apagar Cache', command=fivem_a)
+botao_limpeza = Button(janela, text='Cache', command=fivem_a)
 botao_limpeza.grid(column=0 , row=2, padx=15, pady=15)
 
-botao_kendra = Button(janela, text='Fechar', command=janela.destroy)
+botao_kendra = Button(janela, text='FiveM', command=abrir_fivem)
 botao_kendra.grid(column=0, row=3, padx=20, pady=20)
 
 
